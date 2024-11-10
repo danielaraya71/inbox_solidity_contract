@@ -18,19 +18,32 @@ class Car {
 //Tests the Car functions
 //describes lets you group several it functions
 
-let car;
+// let car;
 
-beforeEach (()=>{
-    car = new Car();
+// beforeEach (()=>{
+//     car = new Car();
+// });
+
+// describe('Car', () => {
+    
+//     it('can park', () => {
+//         assert.equal(car.park(), 'bah'); //This one will fail
+//     });
+
+//     it('can drive', () => {
+//         assert.equal(car.drive(), 'vroom'); //This one will pass
+//     });
+// });
+
+beforeEach(() => {
+    web3.eth.getAccounts()
+        .then(fetchedAccounts => {
+            console.log(fetchedAccounts);
+        });
 });
 
-describe('Car', () => {
-    
-    it('can park', () => {
-        assert.equal(car.park(), 'bah'); //This one will fail
-    });
+describe('Inbox', () => {
+    it('deploys a contract', () =>{
 
-    it('can drive', () => {
-        assert.equal(car.drive(), 'vroom'); //This one will pass
     });
 });
